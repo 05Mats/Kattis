@@ -20,10 +20,6 @@ int main() {
         return 0;
     }
     std::cin >>magic;
-    if ( magic >= -200 or magic <= 200)  {
-        std::cout<<"Wrong input"<<std::endl;
-        return 0;
-    }
     for (int i = 0; i < squares; i++) {
         std::cin>>game[i];
         if (game[i] > 200 or game[i] < -200) {
@@ -33,8 +29,6 @@ int main() {
     temp = game[start-1];
     number= start-1;
     while (1) {
-        std::cout<<"number "<<number<<std::endl;
-        std::cout<<"Game number  "<<game[number]<<std::endl;
         if (game[number]==magic) {
             std::cout<<"magic"<<std::endl;
             std::cout<<jumps;
