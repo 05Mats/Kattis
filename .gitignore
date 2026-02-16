@@ -1,0 +1,12 @@
+# IDE
+.idea/
+
+# CMake
+cmake-build-*/
+build/
+
+# Compiled files
+*.o
+*.exe
+*.out
+XX
